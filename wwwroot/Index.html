@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--адаптирует к различным видам экрана-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/mystyle.css" />
+    <title>Главная страница</title>
+</head>
+<body onload="CreatRSSFeeds()">
+    <div class="container">
+        <header><h1>RSS ридер</h1></header>
+        <section class="flexrow">
+            <div id="URLs" class="menu margins open">
+                <h3 class="title">Доступные ленты</h3>
+                <ul id="ActiveFeedsID">
+                </ul>
+                <div class="margins">
+                    <input type="button" value="Стоп / Пуск" onclick="StopStartFeed()" class="inputSearchButton" />
+                    <input type="button" value="Удалить" onclick="DelFeed()" class="inputSearchButton" />
+                </div>
+                <h3>Макет ленты</h3>
+                <img src="Greed.png" id="greedIMG" onclick="GridClick()">
+                <img src="Line.png" id="lineIMG" onclick="LineClick()">
+            </div>
+            <div class="flexcolumn border">
+                <section class="flexrow margins">
+                    <input type="text" id="searchID" class="inputSearch" placeholder="Search...">
+                    <input type="button" value="Добавить URL" onclick="AddFeed()" class="inputSearchButton" />
+                </section>
+                <article class=" news" id="newsID">
+                </article>
+            </div>    
+        </section>      
+    </div>
+    <script src="js/Index.js"></script>
+</body>
+</html>

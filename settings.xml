@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  <feeds>
+    <feed url="https://habr.com/rss/interesting/" status="deactivate" />
+    <feed url="https://ex-hort.ru/board/rss" status="deactivate" />
+    <feed url="https://mycrib.ru/feed" status="activate" />
+  </feeds>
+  <timers>
+	  <timer value = "350000"/>
+  </timers>
+  <credentials>
+    <!--Не совсем разобралась, что тут надо написать-->
+  </credentials>
+</settings>
